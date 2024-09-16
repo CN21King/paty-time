@@ -1,0 +1,371 @@
+
+:root{
+    --color1: gold;
+    --color2: #28a745;
+    --color3: rgb(0, 0, 0);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color:black;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+ul {
+    margin: 0;
+    padding: 25px;
+    list-style: none;
+    display: inline;
+}
+a {
+    color:#28a745;
+    text-decoration: none;
+    font-size: 1em;
+   
+}
+
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 5vw;
+    border: 1px solid #fff;
+    align-items: center;
+    background-color: black;
+}
+
+.header__logo {
+    width: 45%;
+	height: auto;
+	object-fit: contain;
+	transition: transform 1s;
+	animation: wobble 2s 1;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+.list__item{
+
+}
+.main{
+      background-image: url(images/aleksandr-popov-3-Kh6XSu9XQ-unsplash.jpg); 
+      background-size: cover;
+      background-repeat: no-repeat; 
+      padding: 5px; 
+}
+main h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main p{
+    font-size: larger;
+    padding: 10px;
+    color: black;
+    background-color: #28a745;
+    border: 10px;
+    border-radius: 25px;
+    border-color: aqua;
+}
+video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 5vw;
+    border: 1px solid #fff;
+    align-items: center;
+    background-color: black;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+    color: green;
+}
+input{
+    border-radius: 15px;
+    display: block;
+
+}
+textarea{
+    border-radius: 5px;
+    display: block;
+    width: 500px;
+}
+label{
+    color: var(--color2);
+    display: block;
+    font-size: 50px;
+}
+form h1{
+    color: var(--color2);
+    padding-left: 5.5in;
+    font-size: xx-large;
+    display: block;
+    font-family: 'Saira Extra Condensed';
+}
+button{
+    color: black; 
+    font-size: 1em;
+    background-color:#28a745;
+    align-items: center;
+}
+
+input{
+    width: 500px;
+    height: 25px;
+}
+a>p{
+    text-decoration: none;
+    color: var(--color2);
+    padding: 25%;
+    font-size: 25px;
+    
+}
+
+li{
+    text-decoration: none;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('images/cuneo-mansion-and-gardens-masquerade-birthday-party-elegant-expensive-candelabra-decor-guest-table-candle-lights-floral-centerpieces-decoration-ideas.jpg'); /* Change 'your-image.jpg' to your image path */
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.header {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.8);
+  padding-right: 10%;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  display: flexbox;
+  width: 25%;
+  padding: 5px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  align-items: center;
+
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.main2{
+    background-image: url(images/aleksandr-popov-2XKAUkbq218-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.room{
+  height: 1.5in;
+}
+.container {
+    display: flex;
+    width: 90vw;
+  }
+  
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+  }
+  
+  .panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+  }
+  
+  .panel.active {
+    flex: 5;
+  }
+  
+  .panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      width: 100vw;
+    }
+  
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+      display: none;
+    }
+  }
+
+  .main3{
+    background-image: url(images/aleksandr-popov-9vDdkxSCAD4-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10%;
+}
+
+.contain{
+  font-size: 1em;
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+    .burger-menu {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 30px;
+    }
+    .burger-menu::before,
+    .burger-menu::after {
+      content: "";
+      background: rgb(0, 238, 255);
+      position: absolute;
+      width: 100%;
+      height: 2px;
+    }
+    .burger-menu::before {
+      top: 0;
+    }
+    .burger-menu span {
+      background: #fff;
+      position: absolute;
+      width: 100%;
+      top: 14px;
+      height: 2px;
+    }
+    .burger-menu::after {
+      bottom: 0;
+    }
+
+    /*Menu*/
+  .main-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 3in;
+    background: #272727;
+    border: 1px solid #fff;
+    padding: 20px 10px;
+    transform: translateX(100%);
+  }
+  .box {
+    flex-direction: column;
+    text-align: right;
+  }
+}
+/* tablets in landscape */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* tablets in portrait */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+/* smartphones in landscape */
+@media (max-width: 767px) {
+}
+/* smartphones in portrait*/
+@media (max-width: 480px) {
+}
+
+
+  .nav-list {
+      flex-direction: column;
+      text-align: right;
+  }
+
+   /* active */
+
+   .burger-menu.active {
+    z-index: 3;
+    transform: translateX(-40vw);
+    transition: 0.3s ease;
+}
+
+.burger-menu.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+    transition: 0.3s ease;
+}
+.burger-menu.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+    transition: 0.3s ease;
+}
+
+.burger-menu.active span {
+    transform: scale(0);
+}
+
+.main-nav.active {
+   transform: translate(0);
+   transition: 0.3s ease;
+}
+
+
